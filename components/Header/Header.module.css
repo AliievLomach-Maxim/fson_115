@@ -1,0 +1,8 @@
+.navList {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  padding: 12px;
+}
