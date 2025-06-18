@@ -1,5 +1,6 @@
 import Header from '@/components/Header/Header'
 import './globals.css'
+import TanStackProvider from '@/components/TanStackProvider/TanStackProvider'
 
 export default function RootLayout({
   children,
@@ -9,10 +10,12 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body>
-        <Header />
-        {children}
-        <br />
-        <footer>qwrety</footer>
+        <TanStackProvider>
+          <Header />
+          <hr />
+          <br />
+          {children}
+        </TanStackProvider>
       </body>
     </html>
   )
