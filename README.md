@@ -54,3 +54,22 @@
     </ul>
 </ul>
 </details>
+
+<br/>
+<br/>
+
+# Module-02
+
+<details>
+  <summary>Заняття 1</summary>
+<ul>
+    <li>Nested routes</li>
+    <li>Not-found route</li>
+    <li>Catch-all routes</li>
+    <ul>
+        <li>filter by categoryId</li>
+        <li>filter by name</li>
+    </ul>
+    <li>useRouter</li>
+</ul>
+</details>
