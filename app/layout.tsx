@@ -4,8 +4,10 @@ import TanStackProvider from '@/components/TanStackProvider/TanStackProvider'
 
 export default function RootLayout({
   children,
+  modal,
 }: Readonly<{
   children: React.ReactNode
+  modal: React.ReactNode
 }>) {
   return (
     <html lang='en'>
@@ -15,6 +17,7 @@ export default function RootLayout({
           <hr />
           <br />
           {children}
+          {modal}
         </TanStackProvider>
       </body>
     </html>
