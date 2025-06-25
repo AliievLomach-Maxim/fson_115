@@ -73,3 +73,23 @@
     <li>useRouter</li>
 </ul>
 </details>
+
+<details>
+  <summary>Заняття 2</summary>
+<ul>
+    <li>Grouped routes</li>
+    <li>Parallel routes</li>
+    <ul>
+        <li>@sidebar</li>
+        <li>default.tsx</li>
+    </ul>
+    <li>Interception route</li>
+    <ul>
+        <li>@modal</li>
+        <li>empty default</li>
+        <li>modal in RootLayout</li>
+        <li>close modal with router.back</li>
+    </ul>
+    <li>Redirect</li>
+</ul>
+</details>
