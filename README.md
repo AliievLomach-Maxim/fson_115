@@ -93,3 +93,28 @@
     <li>Redirect</li>
 </ul>
 </details>
+
+<br/>
+<br/>
+
+# Module-03
+
+<details>
+  <summary>Заняття 1</summary>
+<ul>
+    <li>metadata</li>
+    <li>async generateMetadata</li>
+    <li>Open Graph & Twitter</li>
+    <li>next/image</li>
+    <ul>
+        <li>width і height</li>
+        <li>next.config.ts</li>
+    </ul>
+    <li>next/font</li>
+    <li>Performance</li>
+    <ul>
+        <li>Cache-Control</li>
+        <li>next.config.ts</li>
+    </ul>
+</ul>
+</details>
