@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-axios.defaults.baseURL = 'https://next-docs-api.onrender.com'
+axios.defaults.baseURL = 'http://localhost:4000/'
 
 export type NoteType = {
   id: string
@@ -24,6 +24,12 @@ export type CategoryType = {
   updatedAt: string
 }
 
+export type CreateNoteRequest = {
+  title: string
+  content: string
+  categoryId: string
+}
+
 export const getNotes = async (categoryId?: string, title?: string) => {
   const { data } = await axios<NoteListType>('/notes', {
     params: { categoryId, title },
@@ -38,5 +44,10 @@ export const getSingleNote = async (id: string) => {
 
 export const getCategories = async () => {
   const { data } = await axios<CategoryType[]>(`/categories`)
+  return data
+}
+
+export const createNote = async (payload: CreateNoteRequest) => {
+  const { data } = await axios.post<NoteType>(`/notes`, payload)
   return data
 }
