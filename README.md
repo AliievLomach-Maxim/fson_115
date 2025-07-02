@@ -118,3 +118,23 @@
     </ul>
 </ul>
 </details>
+
+<details>
+  <summary>Заняття 2</summary>
+<ul>
+    <li>create note</li>
+    <ul>
+        <li>page</li>
+        <li>sidebar</li>
+        <li>form</li>
+        <li>api</li>
+    </ul>
+    <li>zustand</li>
+    <ul>
+        <li>store</li>
+        <li>draft</li>
+        <li>initialDraft</li>
+        <li>persist</li>
+    </ul>
+</ul>
+</details>
