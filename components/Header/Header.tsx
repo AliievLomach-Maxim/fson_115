@@ -15,9 +15,6 @@ const Header = async () => {
           <li>
             <Link href='/about'>About</Link>
           </li>
-          {/* <li>
-            <Link href='/notes'>Notes</Link>
-          </li> */}
           <li>
             <ul>
               <li style={{ fontSize: '12px' }}>
@@ -32,6 +29,12 @@ const Header = async () => {
           </li>
           <li>
             <Link href='/profile'>Profile</Link>
+          </li>
+          <li>
+            <Link href='/sign-in'>Login</Link>
+          </li>
+          <li>
+            <Link href='/sign-up'>Register</Link>
           </li>
         </ul>
       </nav>
