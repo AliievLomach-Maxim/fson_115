@@ -1,4 +1,4 @@
-import { NoteType } from '@/lib/api'
+import { NoteType } from '@/lib/clientApi'
 import Link from 'next/link'
 
 type Props = {

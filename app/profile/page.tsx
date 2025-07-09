@@ -1,3 +1,4 @@
+import { getServerMe } from '@/lib/serverApi'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -5,8 +6,14 @@ export const metadata: Metadata = {
   description: 'qwerty',
 }
 
-const Profile = () => {
-  return <div>Profile</div>
+const Profile = async () => {
+  const user = await getServerMe()
+
+  return (
+    <div>
+      <h1>{user.userName}</h1>
+    </div>
+  )
 }
 
 export default Profile

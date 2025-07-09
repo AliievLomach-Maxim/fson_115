@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import css from './Header.module.css'
-import { getCategories } from '@/lib/api'
+import { getCategories } from '@/lib/clientApi'
+import AuthNavigation from '../AuthNavigation/AuthNavigation'
 
 const Header = async () => {
   const categories = await getCategories()
@@ -30,12 +31,7 @@ const Header = async () => {
           <li>
             <Link href='/profile'>Profile</Link>
           </li>
-          <li>
-            <Link href='/sign-in'>Login</Link>
-          </li>
-          <li>
-            <Link href='/sign-up'>Register</Link>
-          </li>
+          <AuthNavigation />
         </ul>
       </nav>
     </header>

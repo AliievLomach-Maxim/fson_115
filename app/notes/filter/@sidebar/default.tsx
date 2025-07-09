@@ -1,4 +1,4 @@
-import { getCategories } from '@/lib/api'
+import { getCategories } from '@/lib/clientApi'
 import Link from 'next/link'
 
 const Sidebar = async () => {

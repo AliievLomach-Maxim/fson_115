@@ -1,6 +1,6 @@
 'use client'
 
-import { CategoryType, createNote, CreateNoteRequest } from '@/lib/api'
+import { CategoryType, createNote, CreateNoteRequest } from '@/lib/clientApi'
 import { useNoteDraft } from '@/lib/store/noteDraftStore'
 import { useMutation } from '@tanstack/react-query'
 import { useRouter } from 'next/navigation'
