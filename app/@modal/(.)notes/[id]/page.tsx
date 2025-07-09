@@ -1,5 +1,5 @@
 import Modal from '@/components/Modal/Modal'
-import { getSingleNote } from '@/lib/api'
+import { getSingleNote } from '@/lib/clientApi'
 
 type Props = {
   params: Promise<{ id: string }>

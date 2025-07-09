@@ -1,14 +1,18 @@
 'use client'
 
-import { register, RegisterRequest } from '@/lib/api'
+import { register, RegisterRequest } from '@/lib/clientApi'
+import { useAuth } from '@/lib/store/authStore'
 import { useRouter } from 'next/navigation'
 
 const Register = () => {
   const router = useRouter()
+  const setUser = useAuth((state) => state.setUser)
+
   const handleRegister = async (formData: FormData) => {
     const payload = Object.fromEntries(formData) as RegisterRequest
     const res = await register(payload)
     if (res) {
+      setUser(res)
       router.push('/profile')
     }
   }
